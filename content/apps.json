@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "svpa-export",
+    "name": {
+      "zh": "SaigeVision 项目导出助手",
+      "en": "SaigeVision Project Export Assistant",
+      "ko": "SaigeVision 프로젝트 내보내기 도우미"
+    },
+    "description": {
+      "zh": "将 .srproj 项目、引用图片、修复工具和说明打包成可迁移 ZIP，全程在浏览器本地处理。",
+      "en": "Package a .srproj project, referenced images, repair tools, and instructions into a portable ZIP—all processed locally in your browser.",
+      "ko": ".srproj 프로젝트, 참조 이미지, 복구 도구와 안내서를 이동 가능한 ZIP으로 패키징하며 모든 처리는 브라우저에서 로컬로 진행됩니다."
+    },
+    "url": "https://svpa-export-beta.saigeai.com/",
+    "cover": "/apps/svpa-export/cover.png",
+    "coverAlt": {
+      "zh": "SaigeVision 项目导出助手的项目打包界面",
+      "en": "The project packaging interface of SaigeVision Project Export Assistant",
+      "ko": "SaigeVision 프로젝트 내보내기 도우미의 프로젝트 패키징 화면"
+    },
+    "status": "beta",
+    "category": "saigevision",
+    "tags": {
+      "zh": [
+        "项目打包",
+        "ZIP",
+        "本地处理"
+      ],
+      "en": [
+        "Project packaging",
+        "ZIP",
+        "Local processing"
+      ],
+      "ko": [
+        "프로젝트 패키징",
+        "ZIP",
+        "로컬 처리"
+      ]
+    },
+    "accent": {
+      "primary": "#2563EB",
+      "soft": "#EFF6FF"
+    },
+    "privacy": "local",
+    "publishedAt": "2026-08-14",
+    "hidden": false
+  },
+  {
+    "slug": "saige-label-switcher",
+    "name": {
+      "zh": "SaigeVision 项目转换器",
+      "en": "SaigeVision Project Converter",
+      "ko": "SaigeVision 프로젝트 변환기"
+    },
+    "description": {
+      "zh": "在 SaigeVision V1 与 V2 之间转换分类和分割项目，项目与图片无需上传。",
+      "en": "Convert classification and segmentation projects between SaigeVision V1 and V2 without uploading projects or images.",
+      "ko": "프로젝트나 이미지를 업로드하지 않고 SaigeVision V1과 V2 사이에서 분류 및 세그멘테이션 프로젝트를 변환합니다."
+    },
+    "url": "https://saige-label-switcher-beta.saigeai.com/",
+    "cover": "/apps/saige-label-switcher/cover.png",
+    "coverAlt": {
+      "zh": "SaigeVision 项目转换器的版本转换界面",
+      "en": "The version conversion interface of SaigeVision Project Converter",
+      "ko": "SaigeVision 프로젝트 변환기의 버전 변환 화면"
+    },
+    "status": "beta",
+    "category": "saigevision",
+    "tags": {
+      "zh": [
+        "项目转换",
+        "V1 / V2",
+        "本地处理"
+      ],
+      "en": [
+        "Project conversion",
+        "V1 / V2",
+        "Local processing"
+      ],
+      "ko": [
+        "프로젝트 변환",
+        "V1 / V2",
+        "로컬 처리"
+      ]
+    },
+    "accent": {
+      "primary": "#0F9F8F",
+      "soft": "#ECFDF8"
+    },
+    "privacy": "local",
+    "publishedAt": "2026-08-14",
+    "hidden": false
+  }
+]
