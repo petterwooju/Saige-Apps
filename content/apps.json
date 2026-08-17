@@ -2,7 +2,7 @@
   {
     "slug": "svpa-export",
     "name": {
-      "zh": "SaigeVision V1 项目到处助手",
+      "zh": "SaigeVision V1 项目导出助手",
       "en": "SaigeVision Project Export Assistant",
       "ko": "SaigeVision 프로젝트 내보내기 도우미"
     },
@@ -14,7 +14,7 @@
     "url": "https://svpa-export-beta.saigeai.com/",
     "cover": "/apps/svpa-export/cover.png",
     "coverAlt": {
-      "zh": "SaigeVision V1 项目到处助手的项目打包界面",
+      "zh": "SaigeVision V1 项目导出助手的项目打包界面",
       "en": "The project packaging interface of SaigeVision Project Export Assistant",
       "ko": "SaigeVision 프로젝트 내보내기 도우미의 프로젝트 패키징 화면"
     },
