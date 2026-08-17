@@ -31,7 +31,7 @@ test("server-renders the SaigeAPPs collection", async () => {
   const html = await response.text();
   assert.match(html, /<title>SaigeAPPs/);
   assert.match(html, /为 SaigeVision 工作流制作的轻量网页工具/);
-  assert.match(html, /SaigeVision 项目导出助手/);
+  assert.match(html, /SaigeVision V1 项目到处助手/);
   assert.match(html, /SaigeVision 项目转换器/);
   assert.match(html, /svpa-export-beta\.saigeai\.com/);
   assert.match(html, /saige-label-switcher-beta\.saigeai\.com/);
