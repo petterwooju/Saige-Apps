@@ -4,7 +4,7 @@ import "./globals.css";
 
 const title = "SaigeAPPs — SaigeVision 网页工具集合";
 const description =
-  "SaigeAPPs 收集用于 SaigeVision 项目打包、版本转换与日常效率提升的轻量网页工具。";
+  "SaigeAPPs 收集用于 SaigeVision 项目导出、版本转换与标注质检的轻量网页工具。";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
     requestHeaders.get("x-forwarded-proto") ??
     (host?.startsWith("localhost") ? "http" : "https");
   const origin = host ? `${protocol}://${host}` : undefined;
-  const socialImage = origin ? `${origin}/og.png` : undefined;
+  const socialImage = origin ? `${origin}/og-v2.png` : undefined;
 
   return {
     title,

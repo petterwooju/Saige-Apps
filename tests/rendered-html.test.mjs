@@ -33,8 +33,10 @@ test("server-renders the SaigeAPPs collection", async () => {
   assert.match(html, /为 SaigeVision 工作流制作的轻量网页工具/);
   assert.match(html, /SaigeVision V1 项目导出助手/);
   assert.match(html, /SaigeVision 项目转换器/);
+  assert.match(html, /SaigeVision 标注检查器/);
   assert.match(html, /svpa-export-beta\.saigeai\.com/);
   assert.match(html, /saige-label-switcher-beta\.saigeai\.com/);
+  assert.match(html, /saige-label-checker-beta\.saigeai\.com/);
   assert.doesNotMatch(html, /好用的工具|持续生长的工具集合|更多工具，正在路上/);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|react-loading-skeleton/);
 });
@@ -46,7 +48,7 @@ test("keeps app data complete and screenshots local", async () => {
   const locales = ["zh", "en", "ko"];
   const slugs = new Set();
 
-  assert.equal(appJson.length, 2);
+  assert.equal(appJson.length, 3);
 
   for (const app of appJson) {
     assert.match(app.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);

@@ -90,5 +90,51 @@
     "privacy": "local",
     "publishedAt": "2026-08-14",
     "hidden": false
+  },
+  {
+    "slug": "saige-label-checker",
+    "name": {
+      "zh": "SaigeVision 标注检查器",
+      "en": "SaigeVision Label Checker",
+      "ko": "SaigeVision 라벨 검사기"
+    },
+    "description": {
+      "zh": "在浏览器本地分析 SaigeVision 分割项目，评估训练难度与 Patch 参数，并定位明显或疑似标注问题。",
+      "en": "Analyze SaigeVision segmentation projects locally to assess training difficulty and Patch parameters, and flag clear or suspected labeling issues.",
+      "ko": "SaigeVision 세그멘테이션 프로젝트를 브라우저에서 로컬 분석하여 학습 난이도와 Patch 파라미터를 평가하고 명확하거나 의심스러운 라벨링 문제를 찾습니다."
+    },
+    "url": "https://saige-label-checker-beta.saigeai.com/",
+    "cover": "/apps/saige-label-checker/cover.png",
+    "coverAlt": {
+      "zh": "SaigeVision 标注检查器的应用界面",
+      "en": "SaigeVision Label Checker application interface",
+      "ko": "SaigeVision 라벨 검사기 애플리케이션 화면"
+    },
+    "status": "beta",
+    "category": "saigevision",
+    "tags": {
+      "zh": [
+        "标注质检",
+        "训练诊断",
+        "本地处理"
+      ],
+      "en": [
+        "Label quality",
+        "Training diagnostics",
+        "Local processing"
+      ],
+      "ko": [
+        "라벨 품질 검사",
+        "학습 진단",
+        "로컬 처리"
+      ]
+    },
+    "accent": {
+      "primary": "#10B981",
+      "soft": "#ECFDF5"
+    },
+    "privacy": "local",
+    "publishedAt": "2026-08-17",
+    "hidden": false
   }
 ]
