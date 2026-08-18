@@ -1,6 +1,7 @@
 "use client";
 
 import type { CSSProperties } from "react";
+import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import appsData from "@/content/apps.json";
 
@@ -89,15 +90,19 @@ export default function Home() {
   );
 
   useEffect(() => {
-    const saved = window.localStorage.getItem("saigeapps-locale");
-    if (saved === "zh" || saved === "en" || saved === "ko") {
-      setLocale(saved);
-    } else if (window.navigator.language.toLowerCase().startsWith("ko")) {
-      setLocale("ko");
-    } else if (window.navigator.language.toLowerCase().startsWith("en")) {
-      setLocale("en");
-    }
-    setLocaleReady(true);
+    const frame = window.requestAnimationFrame(() => {
+      const saved = window.localStorage.getItem("saigeapps-locale");
+      if (saved === "zh" || saved === "en" || saved === "ko") {
+        setLocale(saved);
+      } else if (window.navigator.language.toLowerCase().startsWith("ko")) {
+        setLocale("ko");
+      } else if (window.navigator.language.toLowerCase().startsWith("en")) {
+        setLocale("en");
+      }
+      setLocaleReady(true);
+    });
+
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   useEffect(() => {
@@ -167,7 +172,7 @@ export default function Home() {
                         <span className="status-pill">{text.status[app.status]}</span>
                       </div>
                       <div className="screenshot-wrap">
-                        <img
+                        <Image
                           src={app.cover}
                           alt={app.coverAlt[locale]}
                           width="1265"

@@ -48,7 +48,7 @@ async function askSlug(apps) {
     }
 
     if (apps.some((app) => app.slug.toLowerCase() === slug)) {
-      console.log(`slug \"${slug}\" 已存在，请换一个。`);
+      console.log(`slug "${slug}" 已存在，请换一个。`);
       continue;
     }
 
